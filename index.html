@@ -1,40 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Attani - Agencia de Marketing</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attani - Agencia de Marketing Digital</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="hero">
-  <div class="hero-content">
-    <h1>Marketing accesible, humano y estratégico.</h1>
-    <p>Acompañamos a las MIPYMES del sureste mexicano a crecer con estrategias inteligentes.</p>
-    <a href="#diagnostico" class="btn-primary">Diagnóstico Gratis</a>
-  </div>
-<img src="img/hero.png" alt="Hero">
-</header>
 
-<section class="about">
-<h2>¿Qué es Attani?</h2>
-<p>Somos una agencia de marketing enfocada en acompañar y apoyar a micro, pequeñas y medianas empresas en su crecimiento.</p>
-</section>
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Marketing accesible, humano y estratégico.</h1>
+            <p>Acompañamos a las MIPYMES del sureste mexicano a crecer con estrategias inteligentes.</p>
+            <a href="#diagnostico" class="btn-primary">Diagnóstico Gratis</a>
+        </div>
 
-<section class="services">
-<h2>Servicios</h2>
-<div class="service-grid">
-  <div class="card"><img src="img/branding.png"><h3>Branding</h3></div>
-  <div class="card"><img src="img/contenidos.png"><h3>Marketing de Contenidos</h3></div>
-  <div class="card"><img src="img/web.png"><h3>Servicios Web</h3></div>
-</div>
-</section>
+        <!-- Imagen del hero -->
+        <img src="img/hero.png" alt="Hero Attani" class="hero-image">
+    </header>
 
-<section class="cta" id="diagnostico">
-<h2>¿Listo para crecer?</h2>
-<p>Agenda tu diagnóstico gratuito y descubre cómo podemos ayudarte.</p>
-<a href="#" class="btn-primary">Agendar Ahora</a>
-</section>
+    <!-- ¿QUÉ ES ATTANI? -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>¿Qué es Attani?</h2>
+            <p>
+                Somos una agencia de marketing enfocada en acompañar y apoyar a micro, pequeñas y medianas 
+                empresas en su crecimiento. Nos caracterizamos por nuestra cercanía, compromiso y la visión 
+                de demostrar que no se necesita un gran presupuesto para lograr un impacto real.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="service-grid">
+                <div class="card">
+                    <img src="img/branding.png" alt="Branding">
+                    <h3>Branding</h3>
+                    <p>Construimos marcas con propósito, identidad sólida y storytelling estratégico.</p>
+                </div>
+                <div class="card">
+                    <img src="img/contenidos.png" alt="Marketing de Contenidos">
+                    <h3>Marketing de Contenidos</h3>
+                    <p>Conectamos con tu audiencia con contenido atractivo y educativo.</p>
+                </div>
+                <div class="card">
+                    <img src="img/web.png" alt="Servicios Web">
+                    <h3>Servicios Web</h3>
+                    <p>Sitios web, landing pages y chatbots para acercarte a tus clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROPUESTA DE VALOR -->
+    <section class="value-prop" id="value">
+        <div class="container">
+            <h2>Propuesta de Valor</h2>
+            <p>
+                Estrategias de marketing accesibles, personalizadas y humanas para las MIPYMES del sureste.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta" id="diagnostico">
+        <div class="container cta-box">
+            <h2>¿Listo para crecer?</h2>
+            <p>Agenda tu diagnóstico gratuito y descubre cómo podemos ayudarte.</p>
+            <a href="#" class="btn-primary">Agendar Ahora</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Attani</h4>
+                <p>Agencia de Marketing Digital - Mérida, Yucatán</p>
+            </div>
+            <div>
+                <h5>Síguenos</h5>
+                <p>Instagram • Facebook • LinkedIn</p>
+            </div>
+            <div>
+                <p>© <span id="year"></span> Attani. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // año dinámico
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
