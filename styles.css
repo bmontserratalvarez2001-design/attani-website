@@ -1,0 +1,8 @@
+body{font-family:Segoe UI;background:#fafafa;margin:0;}
+.hero{background:#333;color:#fff;padding:80px 20px;display:flex;justify-content:space-between;align-items:center;}
+.hero-img{width:300px;}
+.btn-primary{background:#ff7e00;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;}
+section{padding:60px 20px;}
+.service-grid{display:flex;gap:20px;}
+.card{background:#fff;border-radius:10px;padding:20px;text-align:center;}
+.card img{width:120px;height:120px;object-fit:contain;}
